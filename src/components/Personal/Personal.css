@@ -1,0 +1,53 @@
+
+
+/* Personal.css */
+.btn-custom-color {
+    background-color:  #dc3545; 
+    color: #fff;
+  }
+.btn-custom-color:hover {
+    background-color:  #de172b; 
+    color: #fff;
+  }
+  .advertisers-service-sec span {
+    color:  #dc1f32;
+  }
+
+  /* Default styles for all screen sizes */
+.container-xxl {
+  padding: 50px 0;
+}
+
+.col-lg-5 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for tablet screens */
+@media (max-width: 768px) {
+  .container-xxl {
+      padding: 30px 0; /* Reduce padding for tablet screens */
+  }
+
+  .col-lg-5 {
+      text-align: center; /* Center-align the image for tablet screens */
+  }
+
+  .col-lg-6 {
+      text-align: center; /* Center-align the content for tablet screens */
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 576px) {
+  .container-xxl {
+      padding: 20px 0; 
+      overflow-x: hidden; /* Hide horizontal scrollbar on smaller screens */
+      /* Reduce padding further for mobile screens */
+  }
+
+  .col-lg-5 img {
+      max-width: 100%; /* Ensure the image is responsive on mobile */
+      height: auto;
+  }
+}

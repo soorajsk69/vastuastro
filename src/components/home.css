@@ -1,0 +1,47 @@
+/* home.css */
+
+.carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(136, 180, 78, .7);
+  z-index: 1;
+  color: black;
+}
+
+/* Style for the "Read More" button */
+.read-more-button {
+  background-color: rgb(213, 49, 49);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 40px;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: bold; /* Make text bold */
+}
+
+.read-more-button:hover {
+  background-color: rgb(175, 35, 35);
+}
+
+/* Bold Text */
+.bold-text {
+  font-weight: bold;
+}
+
+.carousel-caption h1 {
+  font-family: 'Your Font Name', sans-serif; /* Specify your desired font family */
+  font-style: italic; /* Add your desired font style (e.g., italic) */
+  font-weight: bold; /* Add your desired font weight */
+  font-size: 32px; /* Adjust the font size as needed */
+  color: black; /* Change the font color to your preferred color */
+  text-transform: uppercase; /* Apply text transformation if needed */
+}

@@ -1,0 +1,23 @@
+.head{
+  position: sticky;
+  top:0 ;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-right: 40px;
+  color: #dc3545;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #dc3545;
+}
+
+.navbar a:hover {
+  color: #b35d73;
+}
