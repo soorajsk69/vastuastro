@@ -1,47 +1,40 @@
-/* home.css */
+.carousel-item img {
+  width: 100%;
+  height: 600px; /* Set the desired height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
 
+
+/* CSS for the caption */
 .carousel-caption {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background: rgba(136, 180, 78, .7);
+  background: linear-gradient(rgba(65, 55, 6, 0.715), rgba(235, 162, 27, 0.355));
   z-index: 1;
-  color: black;
 }
 
-/* Style for the "Read More" button */
-.read-more-button {
-  background-color: rgb(213, 49, 49);
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border-radius: 40px;
-  font-size: 16px;
-  margin-top: 20px;
-  font-weight: bold; /* Make text bold */
-}
-
-.read-more-button:hover {
-  background-color: rgb(175, 35, 35);
-}
-
-/* Bold Text */
-.bold-text {
+/* CSS for the h2 element in the caption */
+.styled-h2 {
+  text-align: center;
   font-weight: bold;
+  font-family: 'YourPreferredFont', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 2s ease forwards; /* Apply the fadeIn animation */
+  opacity: 0; /* Start with opacity 0 (fully transparent) */
 }
 
-.carousel-caption h1 {
-  font-family: 'Your Font Name', sans-serif; /* Specify your desired font family */
-  font-style: italic; /* Add your desired font style (e.g., italic) */
-  font-weight: bold; /* Add your desired font weight */
-  font-size: 32px; /* Adjust the font size as needed */
-  color: black; /* Change the font color to your preferred color */
-  text-transform: uppercase; /* Apply text transformation if needed */
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start fully transparent */
+  }
+  to {
+    opacity: 1; /* End fully opaque (visible) */
+  }
 }

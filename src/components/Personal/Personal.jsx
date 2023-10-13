@@ -1,68 +1,57 @@
-import React from 'react'
-import './Personal.css'
+import React, { useState } from 'react';
+import './Personal.css';
 
 function Personal() {
-    return (
-    <section >
-            <div className="container-xxl py-5">
-                <div className="container">
-                <div>
-                              
-                            </div>
-                    <div className="row g-5">
-                        <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                            <img
-                                className="img-fluid"
-                                src="https://images.pexels.com/photos/32976/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
-                                alt=""
-                            />
-                        </div>
-                        
-                        <div className="col-lg-6 ">
-    
-    
-                            <div>
-                                <div className="section-header text-center advertisers-service-sec">
-                                    <h2 className="fw-bold fs-1">
-                                        Kripesh
-                                        <span className="b-class-secondary"> Krishnan </span>
-                                    </h2>
-                                    <p className="sec-icon"><i className="fa-solid fa-gear"></i></p>
-                                </div>
-                            </div>
-                            <p className="mb-4"  style={{ lineHeight: '2' }}>
-                                Kripesh Krisnan is a leading expert in Scientific Vastu, an ancient Indian system of
-                                architecture that is based on the belief that the physical environment can have a
-                                profound impact on our lives. Kripesh holds an MPhil in Scientific Vastu from the
-                                University of Mumbai and has over 15 years of experience in the field. He has worked
-                                with clients all over the world, helping them to create more harmonious and prosperous
-                                environments.
-                            </p>
-                            <p className="mb-4"  style={{ lineHeight: '2' }}>
-                                Kripesh is a passionate advocate for the benefits of Scientific Vastu. He believes
-                                that it can help people to improve their health, happiness, and well-being. He is also
-                                a firm believer in the power of Vastu to attract positive energy and opportunities.
-                            </p>
-                            <p className="mb-4"  style={{ lineHeight: '2' }}>
-                                Kripesh is a highly sought-after speaker and consultant. He has given lectures and
-                                workshops all over the world, and his work has been featured in numerous publications.
-                                He is also the author of several books on Scientific Vastu.
-                            </p>
-                            <p className="mb-4"  style={{ lineHeight: '2' }}>
-                                Kripesh is a dedicated and passionate professional who is committed to helping people
-                                create more harmonious and prosperous lives. He is a valuable asset to the field of
-                                Scientific Vastu, and his work is making a positive difference in the world.
-                            </p>
-                            <a href="" className="btn btn-custom-color rounded-pill py-3 px-5">
-                                Read More
-                            </a>
-    
-                        </div>
-                    </div>
-                </div>
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleShowMore = (e) => {
+    e.preventDefault();
+    setShowMore(!showMore);
+  };
+
+  return (
+    <section>
+      <div className="container-xxl py-5">
+        <div className="container">
+          <div className="row g-5">
+            <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+              <img
+                className="img-fluid"
+                src="https://images.pexels.com/photos/32976/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+                alt=""
+              />
             </div>
+            <div className="col-lg-6">
+              <div>
+                <div className="section-header text-center advertisers-service-sec">
+                  <h2 className="fw-bold fs-1">
+                    Kripesh
+                    <span className="b-class-secondary"> Krishnan </span>
+                  </h2>
+                  <p className="sec-icon"><i className="fa-solid fa-gear"></i></p>
+                </div>
+              </div>
+              <p className="mb-4" style={{ lineHeight: '2' }}>
+                Kripesh Krishnan is a highly skilled and dedicated scientific Vaasthu consultant, renowned for his expertise in solving complex Vaasthu problems without the need for demolishing buildings.With a diploma in Vedic Vaasthusastra, he brings a deep understanding of traditional principles coupled with innovative approaches to transform spaces.Kripesh has pioneered a new era in Vedic Vaasthushastra, introducing fresh perspectives and creative solutions to age-old challenges. His unique methodology and problem-solving abilities have earned him recognition in the field, making him a sought-after expert in the realm of Vaasthu consulting.
+
+
+                {showMore && (
+                  <>
+                    Apart from his proficiency in Vaasthu, Kripesh is also a certified yoga and meditation trainer, holding credentials from the National Skill Development Council. He believes in holistic well-being and seamlessly integrates his knowledge of yoga and meditation with Vaasthu practices, creating harmonious environments that promote both physical and mental wellness.
+                    With a passion for transforming spaces and enriching lives, Kripesh Krishnan continues to make significant contributions to the world of Vedic Vaasthushastra and holistic living. His innovative approaches, coupled with his extensive knowledge and expertise, make him a respected figure in the realm of Vaasthu consulting and spiritual wellness.
+                  </>
+                )}
+              </p>
+              <a href="#read-more" className="btn btn-custom-color btn-md rounded-pill py-2 px-3" onClick={toggleShowMore}>
+  {showMore ? 'Read Less' : 'Read More'}
+</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-        )
+  );
 }
 
-export default Personal
+export default Personal;
