@@ -3,7 +3,11 @@
     animation-duration: 1s; /* Animation duration */
     animation-timing-function: ease; /* Animation timing function */
   }
-  
+  .bold-uppercase {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+    
   @keyframes slideInUp {
     0% {
       transform: translateY(50px); /* Start position */

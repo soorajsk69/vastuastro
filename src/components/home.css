@@ -1,9 +1,8 @@
 .carousel-item img {
   width: 100%;
-  height: 600px; /* Set the desired height */
+  height: 650px; /* Set the desired height */
   object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
-
 
 /* CSS for the caption */
 .carousel-caption {
@@ -14,19 +13,22 @@
   bottom: 0;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(65, 55, 6, 0.715), rgba(235, 162, 27, 0.355));
+  background: linear-gradient(rgba(232, 119, 71, 0.771), rgba(103, 17, 54, 0.823));
+
   z-index: 1;
 }
 
-/* CSS for the h2 element in the caption */
 .styled-h2 {
   text-align: center;
   font-weight: bold;
-  font-family: 'YourPreferredFont', sans-serif;
-  letter-spacing: 2px;
+  color: rgb(250, 248, 250);
+  font-family: 'Young Serif', serif;
+  letter-spacing: 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   animation: fadeIn 2s ease forwards; /* Apply the fadeIn animation */
   opacity: 0; /* Start with opacity 0 (fully transparent) */
+  font-size: 40px; /* Adjust the font size as needed */
+  font-weight: 900; /* Increase the font weight for a stronger bold effect */
 }
 
 /* Define the fadeIn animation */
